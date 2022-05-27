@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito+Sans:wght@400;700&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito+Sans:wght@400;700&family=Roboto&display=swap');
 * {
     padding: 0;
     margin: 0;
     /* font-family: 'Nunito Sans', sans-serif; */
-    font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -55,10 +55,29 @@ header a:hover {
     margin: 10px 0;
 }
 
+/* .news img {
+    width: 100%;
+    height: 50%;
+} */
+
+.life {
+    background: rgb(153, 178, 252);
+
+}
+
 .life h2{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 15px;
     text-align: center;
+}
+
+.news img {
+    width: 100%;
+    height: 50%;
+}
+
+.news p {
+    padding: 10px;
 }
 
 .photos {
@@ -69,8 +88,13 @@ header a:hover {
     gap: 10px;
 }
 
+.photos p {
+    padding: 10px;
+}
+
 .photos img {
     width: 49%;
+
 }
 
 
