@@ -1,117 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito+Sans:wght@400;700&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    /* font-family: 'Nunito Sans', sans-serif; */
-        /* font-family: 'Roboto', sans-serif; */
-        font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+img.photo {
+  width: 100%;
 }
 
 header {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: #373859;
-    transition: 0.5s;
-    /* font-size: 2em; */
+  background: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 10px;
+  color: #fff;
+  font-size: calc(10px + 16 * (100vw / 1280));
+  height: 15%;
+  width: 100%;
 }
 
-header ul li {
-    list-style: none;
+header span a {
+  text-decoration: none;
+  color: #fff;
 }
 
-header a {
-    text-decoration: none;
-    transition: 0.5s;
-    color: #fff;
+header span:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 2px;
 }
 
-header a:hover {
-    color: rgb(161, 162, 163);
-    text-decoration: underline;
-    letter-spacing: 0.5px;
+header nav {
+  font-size: calc(6px + 16 * (100vw / 1280));
 }
 
-.main {
-    background: #B3C7DC;
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }
 
-.carousel img {
-    max-height: 50%;
+header nav ul a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.main-text {
-    margin-top: 10px;
-    padding: 15px;
-    text-align: center;
+header nav ul a:hover {
+  text-decoration: underline;
 }
 
-.main-text p {
-    margin: 10px 0;
+.main img {
+  width: 100%;
 }
 
-/* .news img {
-    width: 100%;
-    height: 50%;
-} */
-
-.life {
-    background: rgb(153, 178, 252);
-
+.main .main__text {
+  padding: 10px;
+  font-size: calc(10px + 16 * (100vw / 1280));
 }
 
-.life h2{
-    /* margin-top: 10px; */
-    padding: 15px;
-    text-align: center;
+.news h4 {
+  margin: 15px 0;
+  text-align: center;
 }
 
 .news img {
-    width: 100%;
-    height: 50%;
+  width: 100%;
 }
 
-.news p {
-    padding: 10px;
+.news .news__text {
+  padding: 10px;
+  text-align: center;
 }
 
-.photos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.news .news__text p {
+  font-size: calc(10px + 16 * (100vw / 1280));
 }
-
-.photos p {
-    padding: 10px;
-}
-
-.photos img {
-    width: 49%;
-
-}
-
-
-
-
-@media (max-width: 700px) {
-    header {
-        padding: 20px 5%;
-        /* font-size: 14px; */
-    }
-    
-    .photos {
-        gap: 5px;
-    }
-
-    .photos img {
-        width: 100%;
-    }
-
-}
+/*# sourceMappingURL=main.css.map */

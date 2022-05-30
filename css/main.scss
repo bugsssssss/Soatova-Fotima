@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+$header: blue;
+$headerText: #fff;
+@mixin flexCenter ($between) {
+    display: flex;
+    justify-content: $between;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img.photo {
+    width: 100%;
+}
+
+header {
+    background: $header;
+    @include flexCenter(space-between);
+    padding: 15px 10px;
+    color: $headerText;
+    font-size: calc(10px + 16 * (100vw / 1280));
+    height: 15%;
+    width: 100%;
+    span {
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        &:hover {
+            transition: 0.5s;
+            letter-spacing: 2px;
+        }
+    }
+
+    nav {
+        font-size: calc(6px + 16 * (100vw / 1280));
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            a {
+                text-decoration: none;
+                color: $headerText;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    
+    img {
+        width: 100%;
+    }
+
+    .main__text {
+        padding: 10px;
+        font-size: calc(10px + 16 * (100vw / 1280));
+    }
+}
+
+.news { 
+
+    h4 {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .news__text {
+        padding: 10px;
+        text-align: center;
+        p{
+            font-size: calc(10px + 16 * (100vw / 1280));
+        }
+    }
+}
